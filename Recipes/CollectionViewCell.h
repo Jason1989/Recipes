@@ -12,7 +12,4 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *foodImages;
 
-
-
-
 @end

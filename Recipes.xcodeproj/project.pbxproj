@@ -12,6 +12,7 @@
 		4501284321417E8C00313C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4501284221417E8C00313C06 /* Assets.xcassets */; };
 		4501284621417E8C00313C06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4501284421417E8C00313C06 /* LaunchScreen.storyboard */; };
 		4501284921417E8C00313C06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4501284821417E8C00313C06 /* main.m */; };
+		45CBD66D2142D40D00A342A3 /* RecipeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 45CBD66C2142D40D00A342A3 /* RecipeModel.m */; };
 		45FDAAA42141809C00EF63F0 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FDAAA32141809C00EF63F0 /* TableViewController.m */; };
 		45FDAAA7214180AB00EF63F0 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FDAAA6214180AB00EF63F0 /* TableViewCell.m */; };
 		45FDAAA92141829300EF63F0 /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45FDAAA82141829300EF63F0 /* recipes.plist */; };
@@ -30,6 +31,8 @@
 		4501284521417E8C00313C06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4501284721417E8C00313C06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4501284821417E8C00313C06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45CBD66B2142D40D00A342A3 /* RecipeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeModel.h; sourceTree = "<group>"; };
+		45CBD66C2142D40D00A342A3 /* RecipeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeModel.m; sourceTree = "<group>"; };
 		45FDAAA22141809C00EF63F0 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		45FDAAA32141809C00EF63F0 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		45FDAAA5214180AB00EF63F0 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 				45FDAAA22141809C00EF63F0 /* TableViewController.h */,
 				45FDAAA32141809C00EF63F0 /* TableViewController.m */,
 				45FDAAA5214180AB00EF63F0 /* TableViewCell.h */,
+				45CBD66B2142D40D00A342A3 /* RecipeModel.h */,
+				45CBD66C2142D40D00A342A3 /* RecipeModel.m */,
 				45FDAAA6214180AB00EF63F0 /* TableViewCell.m */,
 				4501284221417E8C00313C06 /* Assets.xcassets */,
 				4501284421417E8C00313C06 /* LaunchScreen.storyboard */,
@@ -171,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45FDAAB5214204A600EF63F0 /* CollectionViewController.m in Sources */,
+				45CBD66D2142D40D00A342A3 /* RecipeModel.m in Sources */,
 				4501284921417E8C00313C06 /* main.m in Sources */,
 				45FDAAAF2141E96300EF63F0 /* SegmentedViewController.m in Sources */,
 				4501283B21417E8A00313C06 /* AppDelegate.m in Sources */,

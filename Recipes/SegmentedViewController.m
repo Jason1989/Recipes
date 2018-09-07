@@ -11,6 +11,7 @@
 @interface SegmentedViewController ()
 
 @property (strong, nonatomic) UIImageView* imageView;
+
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
@@ -33,10 +34,17 @@
     resetButton.layer.cornerRadius = 45;
 }
 
+- (NSString *)imageName {
+    if(!_imageName) {
+        _imageName = @"food1";
+    }
+    return _imageName;
+}
+
 -(UIImageView*)imageView{
     
     if(!_imageView){
-        UIImage* image = [UIImage imageNamed:@"food1"];
+        UIImage* image = [UIImage imageNamed:self.imageName];
         _imageView = [[UIImageView alloc] initWithImage:image];
     }
     return _imageView;

@@ -82,10 +82,11 @@
 }
 // *********** stepper action over *****************
 
-// *********** step text start *************
-
-// *********** step text over **************
 
 - (IBAction)recipeName:(UITextField *)sender {
+}
+
+- (BOOL)shouldAutorotate {
+    return NO;
 }
 @end

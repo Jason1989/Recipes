@@ -18,5 +18,21 @@
 		<key>imageName</key>
 		<string>Spicy-Ginger-Chicken-Stir-Fry.jpg</string>
 	</dict>
+    <dict>
+        <key>name</key>
+        <string>Lemon Garlic Sauteed Bok Choy</string>
+        <key>type</key>
+        <string>Vege</string>
+        <key>imageName</key>
+        <string>Lemon-Garlic-Sauteed-Bok-Choy.jpg</string>
+    </dict>
+    <dict>
+        <key>name</key>
+        <string>Blueberry Muffins</string>
+        <key>type</key>
+        <string>Bake</string>
+        <key>imageName</key>
+        <string>blueberry-muffins.jpg</string>
+    </dict>
 </array>
 </plist>

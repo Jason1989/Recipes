@@ -4,7 +4,7 @@
 //
 //  Created by Jian Guo on 9/6/18.
 //  Copyright © 2018 SMU. All rights reserved.
-//  Code reference: https://codingwithsara.com/ios-how-to-create-a-stopwatch/#Sample_Code
+//  Code reference: https://codingwithsara.com/ios-how-to-create-a-stopwatch/#Sample_Code   for timer
 //
 
 #import "ViewController.h"
@@ -33,5 +33,7 @@
 - (IBAction)startPushed:(UIButton *)sender;
 
 - (void)updateTimer;
+
+@property (strong, nonatomic) NSString* imageName;
 
 @end
