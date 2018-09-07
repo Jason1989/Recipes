@@ -17,7 +17,7 @@
 
 @implementation SegmentedViewController
 
-@synthesize photoView, recipeView;
+@synthesize photoView, recipeView, timerLabel, startButton, resetButton;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,6 +26,11 @@
     self.scrollView.contentSize = self.imageView.image.size;
     self.scrollView.minimumZoomScale = 0.1;
     self.scrollView.delegate = self;
+    running = NO;
+    count = 0;
+    timerLabel.text = @"00:00.00";
+    startButton.layer.cornerRadius = 45;
+    resetButton.layer.cornerRadius = 45;
 }
 
 -(UIImageView*)imageView{
@@ -66,4 +71,36 @@
     }
 }
 
+- (IBAction)resetPushed:(UIButton *)sender {
+    running = NO;
+    [myTimer invalidate];
+    myTimer = nil;
+    [startButton setTitle:@"Start" forState:(UIControlStateNormal)];
+    count = 0;
+    timerLabel.text = @"00:00.00";
+
+}
+
+- (IBAction)startPushed:(UIButton *)sender {
+    if (running == NO) {
+        running = YES;
+        [startButton setTitle:@"Stop" forState:(UIControlStateNormal)];
+        if (myTimer == nil) {
+            myTimer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(updateTimer) userInfo:nil repeats:YES];
+        }
+    } else {
+        running = NO;
+        [myTimer invalidate];
+        myTimer = nil;
+        [startButton setTitle:@"Start" forState:(UIControlStateNormal)];
+    }
+}
+
+- (void)updateTimer {
+    count++;
+    int min = floor(count/100/60);
+    int sec = (int)floor(count/100) % 60;
+    int msec = count%100;
+    timerLabel.text = [NSString stringWithFormat:@"%02d:%02d.%02d", min, sec, msec];
+}
 @end
